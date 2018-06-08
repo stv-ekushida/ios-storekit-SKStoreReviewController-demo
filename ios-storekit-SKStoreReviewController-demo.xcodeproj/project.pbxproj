@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C501573620CA101800C48037 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501573520CA101800C48037 /* Review.swift */; };
+		C501573820CA17AB00C48037 /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501573720CA17AB00C48037 /* ReviewTests.swift */; };
+		C501573A20CA23ED00C48037 /* LaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501573920CA23ED00C48037 /* LaunchManager.swift */; };
+		C501573E20CA25AE00C48037 /* LaunchManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501573D20CA25AE00C48037 /* LaunchManagerTests.swift */; };
 		C50ECF7E20CA0C9E00CBD015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50ECF7D20CA0C9E00CBD015 /* AppDelegate.swift */; };
 		C50ECF8020CA0C9E00CBD015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50ECF7F20CA0C9E00CBD015 /* ViewController.swift */; };
 		C50ECF8320CA0C9E00CBD015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50ECF8120CA0C9E00CBD015 /* Main.storyboard */; };
 		C50ECF8520CA0CA000CBD015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50ECF8420CA0CA000CBD015 /* Assets.xcassets */; };
 		C50ECF8820CA0CA000CBD015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50ECF8620CA0CA000CBD015 /* LaunchScreen.storyboard */; };
-		C50ECF9320CA0CA000CBD015 /* ios_storekit_SKStoreReviewController_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50ECF9220CA0CA000CBD015 /* ios_storekit_SKStoreReviewController_demoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C501573520CA101800C48037 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		C501573720CA17AB00C48037 /* ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTests.swift; sourceTree = "<group>"; };
+		C501573920CA23ED00C48037 /* LaunchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchManager.swift; sourceTree = "<group>"; };
+		C501573D20CA25AE00C48037 /* LaunchManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchManagerTests.swift; sourceTree = "<group>"; };
 		C50ECF7A20CA0C9E00CBD015 /* ios-storekit-SKStoreReviewController-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-storekit-SKStoreReviewController-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50ECF7D20CA0C9E00CBD015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C50ECF7F20CA0C9E00CBD015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +41,6 @@
 		C50ECF8720CA0CA000CBD015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50ECF8920CA0CA000CBD015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C50ECF8E20CA0CA000CBD015 /* ios-storekit-SKStoreReviewController-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-storekit-SKStoreReviewController-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C50ECF9220CA0CA000CBD015 /* ios_storekit_SKStoreReviewController_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_storekit_SKStoreReviewController_demoTests.swift; sourceTree = "<group>"; };
 		C50ECF9420CA0CA000CBD015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +62,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C501573B20CA24F100C48037 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C50ECF8620CA0CA000CBD015 /* LaunchScreen.storyboard */,
+				C50ECF7F20CA0C9E00CBD015 /* ViewController.swift */,
+				C50ECF8120CA0C9E00CBD015 /* Main.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C501573C20CA250000C48037 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C501573520CA101800C48037 /* Review.swift */,
+				C501573920CA23ED00C48037 /* LaunchManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C50ECF7120CA0C9E00CBD015 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +102,10 @@
 		C50ECF7C20CA0C9E00CBD015 /* ios-storekit-SKStoreReviewController-demo */ = {
 			isa = PBXGroup;
 			children = (
+				C501573C20CA250000C48037 /* Models */,
+				C501573B20CA24F100C48037 /* ViewControllers */,
 				C50ECF7D20CA0C9E00CBD015 /* AppDelegate.swift */,
-				C50ECF7F20CA0C9E00CBD015 /* ViewController.swift */,
-				C50ECF8120CA0C9E00CBD015 /* Main.storyboard */,
 				C50ECF8420CA0CA000CBD015 /* Assets.xcassets */,
-				C50ECF8620CA0CA000CBD015 /* LaunchScreen.storyboard */,
 				C50ECF8920CA0CA000CBD015 /* Info.plist */,
 			);
 			path = "ios-storekit-SKStoreReviewController-demo";
@@ -90,8 +114,9 @@
 		C50ECF9120CA0CA000CBD015 /* ios-storekit-SKStoreReviewController-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				C50ECF9220CA0CA000CBD015 /* ios_storekit_SKStoreReviewController_demoTests.swift */,
 				C50ECF9420CA0CA000CBD015 /* Info.plist */,
+				C501573720CA17AB00C48037 /* ReviewTests.swift */,
+				C501573D20CA25AE00C48037 /* LaunchManagerTests.swift */,
 			);
 			path = "ios-storekit-SKStoreReviewController-demoTests";
 			sourceTree = "<group>";
@@ -197,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C501573A20CA23ED00C48037 /* LaunchManager.swift in Sources */,
 				C50ECF8020CA0C9E00CBD015 /* ViewController.swift in Sources */,
 				C50ECF7E20CA0C9E00CBD015 /* AppDelegate.swift in Sources */,
+				C501573620CA101800C48037 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50ECF9320CA0CA000CBD015 /* ios_storekit_SKStoreReviewController_demoTests.swift in Sources */,
+				C501573E20CA25AE00C48037 /* LaunchManagerTests.swift in Sources */,
+				C501573820CA17AB00C48037 /* ReviewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
