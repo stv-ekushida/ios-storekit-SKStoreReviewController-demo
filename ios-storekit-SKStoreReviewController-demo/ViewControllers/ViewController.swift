@@ -18,6 +18,10 @@ final class ViewController: UIViewController {
         // https://developer.apple.com/documentation/storekit/skstorereviewcontroller/
         // https://developer.apple.com/app-store/review/guidelines/
         
+        guard Review.shouldShowAlert() else {
+            return
+        }        
         SKStoreReviewController.requestReview()
+        Review.saveLastDisplayAlertDate(targetDate: Date())
     }
 }
